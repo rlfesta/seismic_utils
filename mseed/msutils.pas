@@ -17,7 +17,7 @@ procedure writeblock(var f:file, var b:mseed_block);
 
 procedure readblockdate(var b:mseed_block; var d:tdatetime);
 procedure writeblockdate(var b:mseed_block; var d:tdatetime);  // warning erase original date and timestamp 
-
+procedure incblockdatebyday(var b:mseed_block; var day:logint); // warning erase original date and timestamp 
 
 uses
   Classes, SysUtils;
